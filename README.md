@@ -6,8 +6,9 @@
 5) git add 
 6) git commit -m
 7) git push --set-upstream origin name
-===
-===
+
+-------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++
 
 1.	HOME
         ---  Home_Main ---

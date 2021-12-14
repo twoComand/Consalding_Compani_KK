@@ -1,3 +1,97 @@
+
+1) git clone
+2) git branch name
+3) git checkout name
+4) Работа
+5) git add 
+6) git commit -m
+7) git push --set-upstream origin name
+
+-------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++
+
+1.	HOME
+        ---  Home_Main ---
+      •	About the founder    -  Об основателе
+      •	About the company    -      О компании
+      •	Our Goal - Наша Цель
+2.	AboutUs (О НАС)
+         ---  AboutUs_Main ---
+      •	что мы делаем    --  WeDo
+      •	Strategy --    Стратегия
+      •	Sectionalists   --    Срециалисты
+3.	Services (УСЛУГИ)
+           ---  Servise_Main ---
+      a.	Financial  --  Финансовый
+      b.	Personnel  ---  Кадровый
+      c.	Juridical --- Юридический
+      d.	Managerial  ---  Управленческий
+4.	PriceList (ПРАЙСТ-ЛИСТ)
+           ---  PriceList_Main ---
+      a.	PriceList --- ПРАЙСТ-ЛИСТ)
+5.	News (НОВОСТИ)
+          ---  News_Main ---
+      a.	News  ---  НОВОСТИ
+6.	Сontacts (КОНТАКТЫ)
+          ---  Сontacts_Main ---
+      a.	Сontacts --  КОНТАКТЫ
+
+
+
+1.	Sections   --  Разделы
+      a.	Customer Comments  ---   Коментарии Клиентов
+      b.	Footer 
+      c.	Header
+      d.	Expert Advice --  Консультация Эксперта
+      e.	Questions ---  Остались Вопросы
+2.	Scss
+      a.	_vars.scss --  переменные
+      ==
+      ==
+      ===
+      ==
+      https://twocomand.github.io/Consalding_Compani_KK/
+      ==
+      ==
+      ==
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

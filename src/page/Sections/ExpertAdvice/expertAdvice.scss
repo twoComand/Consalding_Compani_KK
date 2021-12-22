@@ -1,0 +1,28 @@
+input[type='text'],
+input[type='email'],
+textarea {
+    display: block;
+    width: 400px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: brown;
+    background-color: white;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.error{
+    color: red;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+// 
+// .forme{
+//     display: flex;
+//     flex-direction: column;
+// }

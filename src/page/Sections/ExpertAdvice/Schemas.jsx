@@ -1,7 +1,7 @@
 import React from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
-import './expertAdvice.scss';
+// import './expertAdvice.scss';
 
 function Schemas(props) {
     const { control, ...rest } = props

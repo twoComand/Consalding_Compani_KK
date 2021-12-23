@@ -1,0 +1,189 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+  }
+a{
+    text-decoration: none;
+}
+
+#ascUs{
+    background-color: #EDECF8;
+}
+
+.container{
+    width: 310px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.ascUs {
+    &__Link{
+        margin: 17px 0;
+        ul{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        li{
+            margin-right: 14px;
+        }
+
+        a{
+            color: black;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+    }
+}
+
+.formUs-control{
+    margin-bottom: 20px;
+
+    &__title{
+        margin: 10px 0;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    &__subTitle {
+        margin-bottom: 11px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    &__text{
+        margin-bottom: 21px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    input[type='text'],
+    input[type='email']{
+        display: block;
+        width: 306px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.4;
+        color: black;
+        background-color: white;
+        background-image: none;
+        border: 0px solid #ccc;
+        margin-bottom: 18px;
+    }
+
+    label {
+        font-weight: 700;
+    }
+
+    &__button {
+        width: 330px;
+        height: 28px;
+        background-color: white;
+        border: 1px solid #342EAD;
+        font-size: 12px;
+        font-weight: 700;
+
+        &:hover{
+            color: white;
+            background-color: #EA6227;
+        }
+    }
+}
+
+@media screen and (min-width: 872px){
+
+    .container{
+        width: 600px;
+    }
+
+    .formUs-control{
+        &__title{
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        
+        &__subTitle {
+            margin-bottom: 26px;
+            font-size: 18px;
+        }
+
+        &__text{
+            font-size: 12px;
+        }
+
+        input[type='text'],
+        input[type='email']{
+            width: 590px;
+            height: 30px;
+            font-size: 18px;
+        }
+
+        &__button {
+            width: 615px;
+            height: 38px;
+            font-size: 18px;
+        }
+    }
+
+    .ascUs {
+        &__Link{
+            margin: 26px 0;
+    
+            li{
+                margin-right: 20px;
+            }
+    
+            a{
+                font-size: 24px;
+                line-height: 24x
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1221px){
+
+    .container{
+        width: 1200px;
+    }
+
+    .formUs {
+        display: flex;
+        
+    }
+
+    .formUs-control{
+        margin-bottom: 0;
+    
+        input {
+            margin-right: 12px;
+        }
+
+        input[type='text']{
+            width: 203px;
+        }
+
+        input[type='email']{
+            width: 265px;
+        }
+
+        input[name='phone']{
+            width: 305px;
+        }
+    
+        &__button {
+            width: 367px;
+            margin: auto 0;
+            height: 42px;
+        }
+    }
+}

@@ -17,7 +17,11 @@ function AskUs() {
         phone: Yup.string().required('Объязательно к запалнению!'),
     });
 
-    const onSubmit = values => console.log('Form data', values);
+    const onSubmit = (values, onSubmitProps) => {
+        console.log('Form data', values)
+        onSubmitProps.setSubmitting(false)
+        onSubmitProps.resetForm()
+    };
 
     return (
         <section id='ascUs'>
@@ -39,7 +43,7 @@ function AskUs() {
                                 <AscSchema control='input' type='email' label='Ваш e-mail' name='email' />
                                 <AscSchema control='input' type='text' label='Ваш телефон' name='phone' />
 
-                                <button className='formUs-control__button' type='submit' disabled={!formik.isValid}>Получить консультацию</button>
+                                <button className='formUs-control__button' type='submit' disabled={!formik.isValid && formik.isSubmitting}>Получить консультацию</button>
 
                             </Form>
                         )}

@@ -17,7 +17,11 @@ function ExpertAdvice() {
         phone: Yup.string().required('Объязательно к запалнению!'),
         description: Yup.string().required('Объязательно к запалнению!')
     });
-    const onSubmit = values => console.log('Form data', values);
+    const onSubmit = (values, onSubmitProps) => {
+        console.log('Form data', values)
+        onSubmitProps.setSubmitting(false)
+        onSubmitProps.resetForm()
+    };
     return (
         <section id='expertAdvice'>
             <div className="container">
@@ -38,7 +42,7 @@ function ExpertAdvice() {
                                 <Schemas control='input' type='text' label='Ваш телефон' name='phone' />
                                 <Schemas control='textarea' label='Опишите задачу в свободной форме' name='description' />
 
-                                <button className='form-control__button' type='submit' disabled={!formik.isValid}>Отправить</button>
+                                <button className='form-control__button' type='submit' disabled={!formik.isValid && formik.isSubmitting}>Отправить</button>
 
                             </Form>
                         )}

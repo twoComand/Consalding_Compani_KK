@@ -1,0 +1,53 @@
+// == ПЕРЕМЕННЫЕ ====
+
+$font: 'Roboto', sans-serif;
+$fontSalle:'Bitter', serif;
+
+$mainColor: #342EAD;
+$mainTitleColor: #050339;
+$secondColor: #EA6227;
+$white: white;
+
+
+// =================
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: $font;
+}
+
+
+
+
+// === РАСШИРИТЕЛИ ====
+
+%displayLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%displayColum {
+    display: flex;
+    flex-direction: column;
+}
+
+
+%container375{
+    width: 90%;
+    margin: 0 auto;
+}
+%container1025{
+    width: 80%;
+    margin: 0 auto;
+}

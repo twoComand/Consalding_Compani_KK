@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+  }
+a{
+    text-decoration: none;
+}
+
+#expertAdvice{
+    background-color: #EDECF8;
+}
+.container{
+    width: 310px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.advice {
+    &__Link{
+        margin: 17px 0;
+
+        li{
+            margin: 6px 0;
+        }
+
+        a{
+            color: black;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+    }
+}
+
+.form-control{
+    margin-bottom: 20px;
+
+    &__title{
+        margin: 31px 0;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        display: block;
+        width: 306px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.4;
+        color: black;
+        background-color: white;
+        background-image: none;
+        border: 0px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 18px;
+    }
+
+    textarea {
+        height: 72px;
+        resize: none; 
+    }
+
+    label {
+        font-weight: 700;
+    }
+
+    &__button {
+        width: 120px;
+        height: 25px;
+        background-color: white;
+        border: 1px solid #342EAD;
+        border-radius: 25px;
+        font-size: 12px;
+        font-weight: 700;
+
+        &:hover{
+            color: white;
+            background-color: #EA6227;
+        }
+    }
+}
+
+
+.error{
+    color: red;
+}
+
+@media screen and (min-width: 872px){
+
+    .container{
+        width: 600px;
+    }
+
+    .form-control{
+        &__title{
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        input[type='text'],
+        input[type='email'],
+        textarea {
+            width: 590px;
+            height: 30px;
+            font-size: 18px;
+        }
+
+        textarea {
+            height: 98px;
+        }
+
+        &__button {
+            width: 185px;
+            height: 38px;
+            font-size: 18px;
+        }
+    }
+
+    .advice {
+        &__Link{
+            margin: 26px 0;
+    
+            li{
+                margin: 11px 0;
+            }
+    
+            a{
+                font-size: 24px;
+                line-height: 24x
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1221px){
+
+    .container{
+        width: 1200px;
+    }
+
+    .advice{
+        margin-bottom: 99px;
+        display: flex;
+        flex-direction: row-reverse;
+        // justify-content: flex-end;
+
+        &__Link{
+            margin: 0;
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+
+            a{
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+    }
+    
+    .form-control{
+        &__title{
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 45px;
+        }
+    }
+
+
+    .form{
+        width: 50%;
+    }
+}

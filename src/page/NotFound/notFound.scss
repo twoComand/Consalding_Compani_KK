@@ -1,0 +1,10 @@
+@import '../../scss/_vars.scss';
+
+.notFound {
+    font-family: $fontSalle;
+    text-align: center;
+    padding: 10%;
+    color: $secondColor;
+    font-size: 38px;
+    font-weight: 800;
+}

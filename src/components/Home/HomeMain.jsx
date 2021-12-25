@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Routes, Route } from 'react-router-dom';
 // import BiznesForm from '../News/BiznesForm';
 // import Salle from '../News/Salle';
 import AskUs from '../../page/Sections/AskUs/AskUs';
@@ -8,13 +9,16 @@ import AskUs from '../../page/Sections/AskUs/AskUs';
 
 function Home_Main() {
     return (
-        // <Banner />
-        // <Slider_Feedback />
-        // <ExpertAdvice />
-        <AskUs />
-        // <Salle />
-        // <BiznesForm />
+        <div id='Home_Main'>
+            {/* <Banner />,
+            <Slider_Feedback />,
+            <ExpertAdvice />, */}
+            <AskUs />,
+            {/* <Salle />,
+            <BiznesForm />, */}
+
+        </div>
     )
 }
 
-export default Home_Main
+export default Home_Main;

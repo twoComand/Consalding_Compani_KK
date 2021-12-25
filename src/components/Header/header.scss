@@ -1,0 +1,178 @@
+@import '../../scss/_vars.scss';
+
+.container {
+    @extend %container375;
+}
+.header {
+    &__min{
+        font-size: 8px;
+        background-color: $mainColor;
+
+        .tel {
+            font-size: 10px;
+        }
+        
+        ul {
+            @extend %displayLine;
+            justify-content: flex-end;
+            padding: 5px 0;
+            
+            a{
+                color: $white;
+                margin-left: 8px;
+
+            }
+        }
+    }
+
+    &__inner {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__logo {
+        max-width: 10%;
+        margin-right: 2rem;
+
+        a {
+            @extend %displayLine;
+            color:$mainTitleColor;
+            font-family: $fontSalle;
+            font-weight: 800;
+            padding: .8rem 0;
+        }
+    }
+
+    &__nav{
+            display: none;
+        }
+
+    &__navMobile {
+            display: flex;
+            align-items: center;
+
+        ul {
+            @extend %displayColum;
+            padding: 15px;
+            position: absolute;
+            top: 45px;
+            right: 0;
+            width: 100%;
+            background: $mainColor;
+            border-top: 3px solid $secondColor;
+            z-index: 100;
+          
+                li {
+                    @extend %displayColum;
+                    align-items: center;
+                    margin: 10px 0;
+
+                    a {
+                        border-bottom: none;
+                        color: $white;
+
+                        &:hover {
+                            color: $secondColor;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        &__gamburger {
+            font-size: 30px;
+            position: absolute;
+            top: 15%;
+            right: 5%;
+            cursor: pointer;
+        }
+}
+
+
+@media screen and (min-width: 872px){
+    .header {
+        &__min{
+            font-size: 12px;
+
+            .tel {
+                font-size: .94rem;
+            }
+        }
+
+        &__logo {    
+            a {
+                font-size: 22px;
+            }
+        }
+
+        &__navMobile ul{
+            top: 51px;
+            a{
+                font-size: 20px;               
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px){
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header {
+        &__navMobile {
+                display: none;
+        }
+
+        &__logo {    
+            a {
+                font-size: 38px;
+            }
+        }
+
+        &__inner {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            // align-items: center;
+        }
+
+        &__nav{
+            display: flex;
+            max-width: 75%;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        &__menu{
+            display: flex;
+            width: 100%;
+
+            li {
+
+                a {
+                    color: $mainTitleColor;
+                    margin-left: 14px;
+                    font-size: 28px;
+                    font-weight: 700;
+                    border-bottom: 3px solid transparent;
+                    transition: 0.3s;
+        
+                    &:hover,
+                    &.active {
+                        border-color:$secondColor ;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+

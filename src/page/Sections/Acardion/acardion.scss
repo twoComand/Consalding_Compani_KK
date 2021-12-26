@@ -1,0 +1,23 @@
+@import '/src/scss/vars';
+
+.accardion {
+    border: 2px solid red;
+
+    &__header{
+        background-color: rgb(233, 212, 212);
+        cursor: pointer;
+
+        &:hover {
+            background-color: royalblue;
+        }
+    }
+
+    &__arrow {
+        font-size: 40px;
+        color: $mainTitleColor;
+
+        &:hover {
+            color: $secondColor;
+        }
+    }
+}

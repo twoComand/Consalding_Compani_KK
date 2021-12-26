@@ -1,26 +1,44 @@
+@import '/src/scss/vars';
+
+#ContactsMain {
+    margin-top: 150px;
+}
+
 .contacts {
-    text-align: center;
     font-family: Roboto;
+
+    &_title{
+        text-align: center;
+    }
     }
      
     .contacts_adress {
         margin-top: 77px;
         font-size: 24px;
+        h3 {
+            text-align: center;
+            position: relative;
+            padding: 0 0 10px 0;
+        }
+        h3::after {
+            position: absolute;
+            bottom: 0;
+           left: 50%;
+           transform: translatex(-50%);
+           width: 165px;
+           height: 6px;
+        background-color: #EA6227;
+        content: "";
+        }
+        a{
+            display: flex;
+            justify-content: center;
+        }
     }
     
-    h3 {
-        position: relative;
-        padding: 0 0 10px 0;
-    }
-    h3::after {
-        position: absolute;
-        bottom: 0;
-       left: 50%;
-       transform: translatex(-50%);
-       width: 165px;
-       height: 6px;
-    background-color: #EA6227;
-    content: "";
+    #ascUs{
+        margin-top: 150px;
+       
     }
     
      @media (max-width: 982px) {
@@ -30,6 +48,9 @@
     } 
     
     @media (max-width: 768px) {
+        #ContactsMain {
+            margin-top: 100px;
+        }
         .contacts_adress {
             font-size: 15px;
         }

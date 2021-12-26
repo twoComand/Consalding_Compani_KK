@@ -1,19 +1,9 @@
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-}
+@import '/src/scss/vars';
 
-li {
-    list-style: none;
-  }
-a{
-    text-decoration: none;
-}
 
 #expertAdvice{
     background-color: #EDECF8;
+    // text-align: center;
 }
 .container{
     width: 310px;
@@ -22,6 +12,11 @@ a{
 }
 
 .advice {
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__Link{
         margin: 17px 0;
 

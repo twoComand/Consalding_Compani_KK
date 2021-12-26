@@ -1,16 +1,5 @@
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-}
+@import '/src/scss/vars';
 
-li {
-    list-style: none;
-  }
-a{
-    text-decoration: none;
-}
 
 #ascUs{
     background-color: #EDECF8;
@@ -44,6 +33,12 @@ a{
     }
 }
 
+.formUs{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 .formUs-control{
     margin-bottom: 20px;
 
@@ -60,7 +55,7 @@ a{
     }
 
     &__text{
-        margin-bottom: 21px;
+        margin:0 auto 21px;
         font-size: 9px;
         text-align: center;
     }
@@ -103,6 +98,12 @@ a{
     .container{
         width: 600px;
     }
+
+    .formUs{
+        display: flex;
+        flex-direction:row;
+        align-items: none;
+     }
 
     .formUs-control{
         &__title{
@@ -158,6 +159,7 @@ a{
 
     .formUs {
         display: flex;
+        justify-content: center;
         
     }
 

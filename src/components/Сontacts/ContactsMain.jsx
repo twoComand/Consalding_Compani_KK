@@ -1,4 +1,5 @@
 import React from 'react';
+import AskUs from '../../page/Sections/AskUs/AskUs';
 import Contact from './Contact';
 import './contactsMain.scss'
 
@@ -32,6 +33,7 @@ function ContactsMain() {
                     return <Contact Ctitle={element.title} Clinks={element.links} key={index + element.title} />
                 })
             }
+            <AskUs />
 
         </div>
     )

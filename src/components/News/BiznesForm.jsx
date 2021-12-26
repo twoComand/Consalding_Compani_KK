@@ -40,4 +40,4 @@ function BiznesForm() {
     )
 }
 
-export default BiznesForm
+export default BiznesForm;

@@ -1,9 +1,4 @@
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-}
+@import '../../scss/_vars.scss';
 
 #salle{
     margin: 20px 0;
@@ -20,7 +15,7 @@
 }
 
 .container{
-    width: 85%;
+    min-width: 85%;
     margin: 0 auto;
     padding: 2px;
 }
@@ -36,7 +31,7 @@
     }
 
     p{
-        margin: 12px 0;
+        margin: 12px auto;
         color:  #342EAD;
         font-size: 20px;
         font-weight: 700;
@@ -91,6 +86,22 @@
 
 }
 
+// ==== main ======
+.newsM {
+    h2{
+        margin: 25px auto;
+        text-align: center;
+    }
+}
+
+
+#biznes, #feedback, #expertAdvice {
+    margin-top: 30px;
+}
+
+ 
+
+
 
 @media screen and (min-width: 632px){
     .salle__text{
@@ -109,10 +120,19 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            p{
+                width: 90%;
+                margin: 16px auto;
+            }
         }
 
         &__bloc2{
             width: 70%;
+
+            p{
+                width: 90%;
+                margin: 16px auto;
+            }
         }
     }
 
@@ -145,6 +165,13 @@
             }
         }
     
+    }
+
+    // =========
+
+    .newsM h2{
+            font-size: 36px;
+        
     }
 }
 
@@ -205,10 +232,15 @@
         }
     
     }
+
+    #biznes,#feedback, #expertAdvice {
+        margin-top: 90px;
+    }
 }
 
 @media screen and (min-width: 1221px){
     .salle__text{
+        margin-bottom: 85px;
         height: 84px;
         font-size: 44px;
     }
@@ -218,6 +250,7 @@
         .biznes {
 
             h3{
+                margin-bottom: 65px;
                 font-size: 36px;
                 line-height: 42px;
             }
@@ -248,5 +281,21 @@
                 line-height: 38px;
             }
         
+        }
+
+
+        // =============
+
+        .newsM h2{
+                margin: 113px auto 55px;
+                font-size: 64px;
+        }
+
+        // .feedback {
+        //     margin-bottom: 512px;
+        // }
+
+        #biznes, #feedback, #expertAdvice {
+            margin-top: 110px;
         }
 }

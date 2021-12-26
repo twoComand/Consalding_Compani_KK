@@ -63,4 +63,4 @@ function AskUs() {
     )
 }
 
-export default AskUs
+export default AskUs;

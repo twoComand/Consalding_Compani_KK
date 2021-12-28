@@ -9,7 +9,11 @@ import {
   PriceListMain,
   ContactsMain,
   Layout,
-  NotFound
+  NotFound,
+  Finans,
+  Lawyer,
+  Management,
+  Personnel
 } from './components';
 
 function App() {
@@ -24,6 +28,10 @@ function App() {
           <Route path='PriceListMain' element={<PriceListMain />} />
           <Route path='NewsMain' element={<NewsMain />} />
           <Route path='ContactsMain' element={<ContactsMain />} />
+          <Route path='ServiseMain/Finans' element={<Finans />} />
+          <Route path='ServiseMain/Lawyer' element={<Lawyer />} />
+          <Route path='ServiseMain/Management' element={<Management />} />
+          <Route path='ServiseMain/Personnel' element={<Personnel />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>

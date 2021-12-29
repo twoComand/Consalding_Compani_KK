@@ -21,7 +21,7 @@ function Banner() {
                 <div className="banner__div">
                     <p>
                         Предлагем Вам профессиональную помощь в развитии, наведении порядка и антикризисном управлении бизнесом.
-                        <a href="/">button</a>
+
                     </p>
                     <img src="https://images.pexels.com/photos/51930/chess-game-chessboard-glass-51930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
                 </div>
@@ -34,6 +34,7 @@ function Banner() {
                 <div className="banner__div">
                     <p>
                         Ведущая российская компания по оптово-розничным продажам автозапчастей для японских автомобилей, с собственной сетью магазинов, сервисных центров и сетью региональных представительств.
+                        <a href="/">button</a>
                     </p>
                     <img src="https://images.pexels.com/photos/1709003/pexels-photo-1709003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 " alt="" />
                 </div>

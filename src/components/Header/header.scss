@@ -35,9 +35,8 @@
     }
 
     &__logo {
-        // max-width: 10%;
+        max-width: 10%;
         margin-right: 2rem;
-        padding-right: 580px;
         padding-left: 15px;
         a {
             @extend %displayLine;
@@ -55,14 +54,14 @@
     &__navMobile {
             display: flex;
             align-items: center;
-
-        ul {
+       
+            ul {
             @extend %displayColum;
             padding: 15px;
             position: absolute;
             top: 45px;
             right: 0;
-            // width: 100%;
+            width: 100%;
             background: $mainColor;
             border-top: 3px solid $secondColor;
             z-index: 100;

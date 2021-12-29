@@ -2,18 +2,20 @@ import React from 'react';
 import Banner from '../../page/Sections/Banner/Banner';
 import Slider from '../../page/Sections/Slider_Feedback/Slider_Feedback';
 import FinansPageOrder from '../Services/Finans/FinansPageOrder';
+// import OurGoal from './OurGoal';
 import '../Services/Finans/finans.scss'
 import './home.scss'
+import AboutFounder from './AboutFounder';
 
-function Home_Main() {
+function Home_Main({ children }) {
 
     const homeLinks = [
         {
             title: 'Об основателе компании',
             img: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80",
             text: `Инвестиционный консалтинг Орион позволяет нашим клиентам разработать и обосновать инвестиционную модель инвестиционного проекта, привлечь денежные средства для получения финансирования в развитие существующего бизнеса. Мы предоставляем широкий спектр услуг в управлении инвестиционным проектом, в том числе анализ и консультирование по существующим инвест портфелям, анализ стратегии инвестирования, формировании активов для долгосрочного инвестирования.`,
-            link: '',
-            btn: 'Нзнать больше',
+            link: 'HomeMain/OurGoal',
+            btn: 'Узнать больше',
         },
         {
             title: 'О Компании',
@@ -35,6 +37,8 @@ function Home_Main() {
     return (
         <section id='Home_Main'>
             <Banner />
+            <AboutFounder />
+            {/* <OurGoal /> */}
             <div className="container">
                 <div className="finans">
 
@@ -49,7 +53,7 @@ function Home_Main() {
             <Slider />
 
 
-
+            <div >{children}</div>
         </section>
     )
 }

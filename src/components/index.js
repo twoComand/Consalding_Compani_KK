@@ -11,3 +11,5 @@ export { default as Finans } from '../components/Services/Finans/Finans';
 export { default as Lawyer } from '../components/Services/Lawyer/Lawyer';
 export { default as Management } from '../components/Services/Management/Management';
 export { default as Personnel } from '../components/Services/Personnel/Personnel';
+export { default as OurGoal } from '../components/Home/OurGoal';
+export { default as ExpertAdvice } from '../page/Sections/ExpertAdvice/ExpertAdvice';

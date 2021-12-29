@@ -7,7 +7,7 @@ import './contactsMain.scss'
 
 
 
-function ContactsMain() {
+function ContactsMain({ children }) {
 
     const contact = [
         {
@@ -40,6 +40,8 @@ function ContactsMain() {
                 })
             }
             <AskUs />
+
+            <div >{children}</div>
 
         </div>
     )

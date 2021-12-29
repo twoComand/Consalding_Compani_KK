@@ -12,4 +12,6 @@ export { default as Lawyer } from '../components/Services/Lawyer/Lawyer';
 export { default as Management } from '../components/Services/Management/Management';
 export { default as Personnel } from '../components/Services/Personnel/Personnel';
 export { default as OurGoal } from '../components/Home/OurGoal';
+export { default as AboutFounder } from '../components/Home/AboutFounder';
+export { default as AboutCompany } from '../components/Home/AboutCompany';
 export { default as ExpertAdvice } from '../page/Sections/ExpertAdvice/ExpertAdvice';

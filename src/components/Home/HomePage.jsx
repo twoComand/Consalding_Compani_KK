@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './finans.scss';
+import '../Services/Finans/finans.scss';
+// import './finans.scss';
 
-function FinansPageOrder(props) {
+function HomePage(props) {
     return (
         <div className="finansrder__block">
             <h3>{props.Stitle}</h3>
@@ -12,11 +13,11 @@ function FinansPageOrder(props) {
                 </div>
                 <div className="finansrder__item">
                     <p>{props.Stext}</p>
-                    <button className='finansrder__button'><Link to='/'>{props.Sbtn}</Link></button>
+                    <button className='finansrder__button'><Link to={props.Slink}>{props.Sbtn}</Link></button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default FinansPageOrder;
+export default HomePage

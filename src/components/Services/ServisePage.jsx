@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import './serviseMain.scss';
 
@@ -16,7 +16,7 @@ function ServisePage(props) {
                     </p>
                     <div className="servise__buttonBlock">
                         <button className='servise__button'><Link to={props.Slink}>Узнать больше</Link></button>
-                        <button className='servise__button'><Link to="/ExpertAdvice">Заказать</Link></button>
+                        <button className='servise__button'><Link to={props.Slink}>Заказать</Link></button>
                     </div>
 
                 </div>

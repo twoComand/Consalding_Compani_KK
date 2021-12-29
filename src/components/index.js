@@ -16,4 +16,4 @@ export { default as OurGoal } from '../components/Home/OurGoal';
 export { default as AboutFounder } from '../components/Home/AboutFounder';
 export { default as AboutCompany } from '../components/Home/AboutCompany';
 export { default as ExpertAdvice } from '../page/Sections/ExpertAdvice/ExpertAdvice';
-export { default as ExpertAdvice } from '../page/Sections/ExpertAdvice/ExpertAdvice';
+

@@ -2,9 +2,14 @@
       background-color: #050339;
       color: white;
       height: 20px;
+      width: 100%;
       text-align: center;
       font-size: 10px;
       padding: 10px;
+    }
+
+    #Footer {
+      margin-top: 55px;
     }
     .uli{
             background-color: #342EAD;
@@ -28,6 +33,7 @@
             border-right: 0;
           }
 .divsa{
+  width: 100%;
   background-color: #342EAD;
 }
 .contacss{
@@ -45,6 +51,9 @@ a{
 
 
 @media screen  and ( min-width: 768px ){
+  #Footer {
+    margin-top: 85px;
+  }
   .uli{
     a{
       font-size: 12px;
@@ -77,184 +86,3 @@ a{
     font-size: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// .footer {
-//     display: block;
-//      position: absolute;
-//     // width: 1278px;
-//     // width: 100%;
-    
-//     }
-//     // .divsa{
-//     //   width: 1264px;
-//     // }
-//     //logo
-//     .logoU{
-//       background-color: #342EAD;
-    
-//         li{
-//           margin: 0;
-//       align-items: center;
-//       text-align: center;
-//          }
-//           a{
-//         font-size: 30px;
-//         color: white;
-//       }
-//     }
-//     //menu
-//     .uli{
-//       background-color: #342EAD;
-//       display: flex;
-//       height: 40px;
-//       align-items: center;
-//       text-align: center;
-//       justify-content: center;
-
-//         li{
-//         padding: 0;
-//         align-items: center;
-//         text-align: center;
-//     }
-//         a{
-//            border-right: 1px solid white;
-//         padding-right: 10px;
-//         padding-left: 10px;
-//         font-size: 12px;
-//         color: white;
-//       }
-//     }
-//     .uli  li:last-child a{
-//       border-right: 0;
-//     }
-//     .sett{
-//       background-color: #342EAD;
-//       display: flex;
-//       justify-content: center;
-//       padding: 10px;
-//       li{
-//         display: flex;
-//         align-items: center;
-//         text-align: center;
-//         padding: 0px;
-      
-//       }
-//       a{
-//         border-right: 1px solid white;
-//         font-size: 12px;
-//         padding-left: 10px;
-//         padding-right: 10px;
-//         color: white;
-//       }
-//     }
-//     .sett li:last-child a{
-//       border-right: 0;
-//      }
-//     .contacss{
-//       background-color: #342EAD;
-//       display: flex;
-//       align-items: center;
-//       text-align: center;
-//       justify-content: center;
-//       li{
-//         color: white;
-//         padding: 10px;
-//       }
-//       a{
-//         font-size: 16px;
-//         color: white;
-//       }
-//     }
-//     .p{
-//       background-color: #050339;
-//       display: grid ;
-//       color: white;
-//       // width: 1264;
-//       height: 50px;
-//       text-align: center;
-//       align-items: center;
-//       font-size: 28px;
-//     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // @media (max-width: 952px){
-    //   .p{
-    //     font-size: 24px;
-    //     // width: 952px;
-    //   }
-    //   // .footer{
-    //   //   width: 952px;
-    //   // }   
-    //   }
-     
-    
-
-    // //768
-    // @media (max-width: 768px){
-     
-    //   .p{
-    //     font-size: 16px;
-    //     // width: 768px;
-    //     padding-left: 25px;
-    //   }
-    //   // .footer{
-    //     // width: 768px;
-    //   // }
-    // }
-    // @media (max-width: 565px){
-      
-    //   .p{
-    //     // width: 565px;
-    //     font-size: 14px;
-    // }
-    // }
-    // //375
-    // @media (max-width: 375px){
-    // //  .footer{
-    //   //  width: 375px;
-    // //  }
-     
-    //   .p{
-    //     font-size: 10px;
-    //     // width: 375px;
-    // }
-    // .logoU li a {
-    //   font-size: 14px;
-    // }
-    // .uli li a {
-    //   font-size: 6px;
-    // }
-    // .sett li a {
-    //   font-size: 6px;
-    // }
-    // .contacss li a{
-    //   font-size: 6px;
-    // }
-    // } 
-  
- 

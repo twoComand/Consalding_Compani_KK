@@ -16,7 +16,7 @@ function ServisePage(props) {
                     </p>
                     <div className="servise__buttonBlock">
                         <button className='servise__button'><Link to={props.Slink}>Узнать больше</Link></button>
-                        <button className='servise__button'><Link to="/">Заказать</Link></button>
+                        <button className='servise__button'><Link to="/ExpertAdvice">Заказать</Link></button>
                     </div>
 
                 </div>

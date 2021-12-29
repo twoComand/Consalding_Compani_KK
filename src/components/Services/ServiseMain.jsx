@@ -3,7 +3,7 @@ import ServisePage from './ServisePage';
 import ExpertAdvice from '../../page/Sections/ExpertAdvice/ExpertAdvice';
 import './serviseMain.scss';
 
-function ServiseMain() {
+function ServiseMain({ children }) {
 
     const servises = [
         {
@@ -62,6 +62,7 @@ function ServiseMain() {
                     }
                 </div>
             </div>
+            <div >{children}</div>
         </section>
     )
 }

@@ -1,0 +1,158 @@
+@import '/src/scss/vars';
+
+#OurGoal {
+ margin-top: 110px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ourGoal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+        width: 180px;
+        height: 230px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 40px;
+        }
+    }
+
+    h3 {
+        color: $mainTitleColor;
+        text-align: center;
+        font-size: 24px;
+        margin: 40px 0;
+    }
+
+    p{
+        text-align: center;
+    }
+
+}
+
+// ==================aboutFounder
+
+#aboutFounder  h3{
+    text-align: center;
+    margin: 95px auto ;
+}
+.aboutFounder{
+    display: flex;
+    flex-direction: column;
+
+    .video{
+        width:80% ;
+    }
+
+    &__block{
+        width: 95%;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            margin-top:30px ;
+            text-align: center;
+            font-weight: 400;
+        }
+        img {
+            width: 80%;
+            margin: 30px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+    .ourGoal {
+        &__img{
+            width: 380px;
+            height: 460px;
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+
+       
+
+        p{
+            width: 80%;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 33px;
+        }
+    }
+
+    #aboutFounder h3{
+        font-size: 32px;
+    }
+    .aboutFounder{
+        display: flex;
+        flex-direction: row;
+    
+        .video{
+            width:80% ;
+        }
+
+        &__block{
+            margin-top: 95px;
+        }
+    p{
+        width: 100%;
+    }
+     & :nth-child(1) p{
+         text-align: right;
+     }
+     & :nth-child(2) p{
+         text-align: left;
+     }
+
+    
+      
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .ourGoal {
+        display: flex;
+        flex-direction: row;
+
+        &__img{
+            width: 580px;
+            height: 790px;
+        }
+
+        &__text{
+            width: 100%;
+            p{
+                text-align: left;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    // .aboutFounder{
+    //     display: flex;
+    //     fl
+    
+    //     h3{
+    //         font-size: 32px;
+    //     }
+    //     .video{
+    //         width:80% ;
+    //     }
+
+    
+      
+    // }
+}

@@ -1,19 +1,9 @@
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-}
+@import '/src/scss/vars';
 
-li {
-    list-style: none;
-  }
-a{
-    text-decoration: none;
-}
 
 #expertAdvice{
     background-color: #EDECF8;
+    // text-align: center;
 }
 .container{
     width: 310px;
@@ -22,6 +12,11 @@ a{
 }
 
 .advice {
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__Link{
         margin: 17px 0;
 
@@ -73,18 +68,7 @@ a{
     }
 
     &__button {
-        width: 120px;
-        height: 25px;
-        background-color: white;
-        border: 1px solid #342EAD;
-        border-radius: 25px;
-        font-size: 12px;
-        font-weight: 700;
-
-        &:hover{
-            color: white;
-            background-color: #EA6227;
-        }
+        @extend %button;
     }
 }
 

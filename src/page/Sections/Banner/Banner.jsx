@@ -16,7 +16,7 @@ function Banner() {
 
 
     return (
-        <section className="banner">
+        <section className="banner" id="banner">
             <Slider {...settings}>
                 <div className="banner__div">
                     <p>
@@ -43,4 +43,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Banner;

@@ -1,0 +1,136 @@
+@import '/src/scss/vars';
+
+
+#ServiseMain{
+    margin-top: 50px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.servise {
+    h2,h3{
+        text-align: center;
+        color: $mainTitleColor;
+    }
+
+    &__block{
+        margin-top: 80px;
+    }
+    h3{
+        margin: 35px auto;
+    }
+
+    &__img {
+        min-width: 300px;
+        height: 220px;
+        margin:0 auto 35px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    p{
+        text-align:center;
+        padding: 8px;
+    }
+
+    &__buttonBlock{
+        display: flex;
+        justify-content: center;
+        justify-content:space-around;
+        margin-top: 35px
+        
+    
+    }
+    &__buttonBlock a {
+        color: black
+    }
+
+    &__button {
+        @extend %button;
+    }
+
+
+}
+
+@media screen and (min-width: 760px){
+    .servise {
+        h2{
+            font-size: 24px;
+
+        }
+
+        &__block{
+            margin-top: 130px;
+        }
+
+        &__info{
+            display: flex;
+        }
+        
+        &__item{
+            width: 50%;
+            position: relative;
+            p{
+                width: 100%;
+                text-align: left;
+            }
+        }
+    
+        &__buttonBlock{
+            position: absolute;
+            left: 2%;
+            bottom: 15%;
+            
+        }
+        &__button {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+    .servise {
+        h2{
+            font-size: 34px;
+        }
+
+        h3{
+            font-size: 28px;
+        }
+
+        &__info{
+
+            p{
+                font-size: 18px;
+            }
+        }
+        &__button {
+            font-weight: 700;
+            height: 35px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1100px){
+
+    .servise{
+        &__img {
+            min-width: 450px;
+        }
+    }
+}
+@media screen and (min-width: 1400px){
+
+    .servise{
+        &__img {
+            min-width: 650px;
+        }
+    }
+}

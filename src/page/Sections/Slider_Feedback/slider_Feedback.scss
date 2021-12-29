@@ -1,13 +1,8 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-}
-li {
-  list-style: none;
-}
+
+@import '/src/scss/vars';
+
 #feedback{
-  margin-bottom: 223px;
+  margin-bottom: 63px;
 }
 
 .feedback-title{
@@ -17,8 +12,8 @@ li {
 
 .feedback {
   margin-top: 21px;
-  min-width: 380px;
-  height: 185px;
+  // min-width: 380px;
+  // max-height: 585px;
   display: flex;
   position: relative;
   align-items: center;
@@ -94,13 +89,13 @@ li {
 
 
   &__T-content {
-    width: 340px;
-    height: 165px;
+    // width: 340px;
+    // height: 165px;
     display: flex;
     align-items: center;
 
     ul {
-      padding: 28px;
+      padding: 28px 0 28px 28px;
       position: absolute;
       left: 0;
       // top: 0;
@@ -131,12 +126,13 @@ li {
 @media screen and (min-width: 750px){
 
   .feedback-title{
+    margin-bottom: 55px;
     font-size: 24px;
   }
 
   .feedback{
     min-width: 768px;
-    max-height: 400px;
+    max-height: 700px;
     display: flex;
     &_ch{
       height: 400px; 
@@ -223,11 +219,15 @@ li {
 @media screen and (min-width: 962px){
 
   .feedback-title{
+    margin-bottom: 75px;
     font-size: 28px;
   }
 
   .feedback__T-content ul {
     left: 50%;
+    p{
+      width: 80%;
+    }
   }
 }
 
@@ -272,9 +272,7 @@ li {
     width: 480px;
   }
   &__T-content {
-    p{
-      font-size: 16px;
-    }
+  
     h3{
       margin-top: 11px;
     }
@@ -291,6 +289,10 @@ li {
       width: 430px;
       padding: 18px;
       padding-bottom: 18px;
+      p{
+        font-size: 16px;
+        width: 80%;
+      }
     }
   }
   }
@@ -298,7 +300,8 @@ li {
 
 @media screen and (min-width: 1221px){
   .feedback {
-    height: 600px;
+    height: 700px;
+    margin-bottom: 200px;
 
     &__ch{
       height: 600px;

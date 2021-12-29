@@ -12,21 +12,24 @@ function Header() {
         <div className="header__min">
             <div className="container">
                 <ul>
-                    <li><NavLink to="//ContactsMain">г. Бишкек ул. Токтогула 24</NavLink></li>
-                    <li><Link to="//ContactsMain"> тел. 0702 33 33 33</Link></li>
+                    <li><Link to="ContactsMain">г. Бишкек ул. Токтогула 24</Link></li>
+                    <li><Link to="ContactsMain"> тел. 0702 33 33 33</Link></li>
                     <li><Link to="/"> <FaTelegramPlane className='sosLink tel' /></Link></li>
                     <li><Link to="/"> <GrInstagram className='sosLink' /></Link></li>
                 </ul>
             </div>
         </div>
         <div className="header__inner">
-            {/* <div className="container"> */}
-                <div className="header__logo">
-                    <NavLink to="/">ORION</NavLink>
+            <div className="container">
+                <div className="header__inner2">
+                    <div className="header__logo">
+                        <NavLink to="/">ORION</NavLink>
+                    </div>
+                    <NavMobile />
+                    <Nav />
                 </div>
-                <NavMobile />
-                <Nav />
-            {/* </div> */}
+            </div>
+
         </div>
 
     </header>

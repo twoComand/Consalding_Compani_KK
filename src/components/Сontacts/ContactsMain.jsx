@@ -1,10 +1,13 @@
 import React from 'react';
+import { FaTelegramPlane } from 'react-icons/fa';
+import { GrInstagram } from 'react-icons/gr';
+import AskUs from '../../page/Sections/AskUs/AskUs';
 import Contact from './Contact';
 import './contactsMain.scss'
 
 
 
-function ContactsMain() {
+function ContactsMain({ children }) {
 
     const contact = [
         {
@@ -17,7 +20,11 @@ function ContactsMain() {
         },
         {
             title: 'Социальные сети',
-            links: 'vektor.png',
+            links: <FaTelegramPlane />,
+        },
+        {
+            title: 'Социальные сети',
+            links: <GrInstagram />,
         },
         {
             title: 'Адрес',
@@ -32,6 +39,9 @@ function ContactsMain() {
                     return <Contact Ctitle={element.title} Clinks={element.links} key={index + element.title} />
                 })
             }
+            <AskUs />
+
+            <div >{children}</div>
 
         </div>
     )

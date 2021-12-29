@@ -16,7 +16,9 @@ import {
   Management,
   Personnel,
   OurGoal,
-  ExpertAdvice,
+  AboutFounder,
+  AboutCompany,
+  // ExpertAdvice,
 } from './components';
 
 const Separator = ({ children, ...props }) => (
@@ -58,8 +60,10 @@ function App() {
           <Route path='ServiseMain/Lawyer' element={<Lawyer />} />
           <Route path='ServiseMain/Management' element={<Management />} />
           <Route path='ServiseMain/Personnel' element={<Personnel />} />
-          <Route path='HomeMain/OurGoal' element={<OurGoal />} />
-          <Route path='#ExpertAdvice' element={<ExpertAdvice />} />
+          <Route path='OurGoal' element={<OurGoal />} />
+          <Route path='AboutFounder' element={<AboutFounder />} />
+          <Route path='AboutCompany' element={<AboutCompany />} />
+          {/* <Route path='#ExpertAdvice' element={<ExpertAdvice />} /> */}
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>

@@ -7,3 +7,4 @@ export { default as NewsMain } from './News/NewsMain';
 export { default as PriceListMain } from './PriceList/PriceListMain';
 export { default as ContactsMain } from './Сontacts/ContactsMain';
 export { default as NotFound } from '../page/NotFound/NotFound';
+export { default as Footer } from './Footer/Footer'

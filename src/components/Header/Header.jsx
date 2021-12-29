@@ -20,13 +20,13 @@ function Header() {
             </div>
         </div>
         <div className="header__inner">
-            <div className="container">
+            {/* <div className="container"> */}
                 <div className="header__logo">
                     <NavLink to="/">ORION</NavLink>
                 </div>
                 <NavMobile />
                 <Nav />
-            </div>
+            {/* </div> */}
         </div>
 
     </header>

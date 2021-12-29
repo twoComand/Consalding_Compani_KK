@@ -12,7 +12,7 @@ function FinansPageOrder(props) {
                 </div>
                 <div className="finansrder__item">
                     <p>{props.Stext}</p>
-                    <button className='finansrder__button'><Link to='/'>{props.Sbtn}</Link></button>
+                    <button className='finansrder__button'><a href='#expertAdvice'>{props.Sbtn}</a></button>
                 </div>
             </div>
         </div>

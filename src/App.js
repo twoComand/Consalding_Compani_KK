@@ -19,6 +19,8 @@ import {
   AboutFounder,
   AboutCompany,
   WeDo,
+  Strategy,
+  Spacialist,
   // ExpertAdvice,
 } from './components';
 
@@ -65,6 +67,8 @@ function App() {
           <Route path='AboutFounder' element={<AboutFounder />} />
           <Route path='AboutCompany' element={<AboutCompany />} />
           <Route path='WeDo' element={<WeDo />} />
+          <Route path='Strategy' element={<Strategy />} />
+          <Route path='Spacialist' element={<Spacialist />} />
           {/* <Route path='#ExpertAdvice' element={<ExpertAdvice />} /> */}
           <Route path='*' element={<NotFound />} />
         </Route>

@@ -1,3 +1,49 @@
+@import '/src/scss/vars';
+.wedo{
+    h2{
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    &__inner{
+        text-align: center;
+
+        video{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 762px){
+    .wedo__inner{
+        video{
+            width: 500px;
+            margin: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+
+    .wedo__inner{
+        video{
+            width: 800px;
+            margin: 60px;
+        }
+    }
+    .wedo__inner-text{
+        display: flex;
+
+        p{
+            width: 50%;
+            text-align:initial;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 5px;
+        }
+    }
+}
+
 // * {
 //     box-sizing: border-box;
 //     margin:0 auto;

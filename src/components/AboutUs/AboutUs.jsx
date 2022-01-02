@@ -22,7 +22,7 @@ function AboutUs() {
                             Будучи золотым партнером SAP и имея огромный отраслевой опыт внедрения и поддержки цифровых
                             систем, Орион обладает глубокой экспертизой, которая позволяет формировать для бизнеса дополнительную ценность.
                         </p>
-                        <button className="about__button"><Link to='WeDo'>Узнать больше</Link></button>
+                        <button className="about__button"><Link to='/WeDo'>Узнать больше</Link></button>
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@ function AboutUs() {
                             Будучи золотым партнером SAP и имея огромный отраслевой опыт внедрения и поддержки цифровых
                             систем, Орион обладает глубокой экспертизой, которая позволяет формировать для бизнеса дополнительную ценность.
                         </p>
-                        <button className="about__button"><Link to='WeDo'>Узнать больше</Link></button>
+                        <button className="about__button"><Link to='/Strategy'>Узнать больше</Link></button>
                     </div>
                 </div>
 

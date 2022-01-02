@@ -18,6 +18,7 @@ import {
   OurGoal,
   AboutFounder,
   AboutCompany,
+  WeDo,
   // ExpertAdvice,
 } from './components';
 
@@ -29,7 +30,7 @@ const Separator = ({ children, ...props }) => (
 
 const itemBread = [
   { to: '/', label: 'HomeMain' },
-  { to: '/AboutUsMain', label: 'AboutUsMain' },
+  // { to: '/AboutUsMain', label: 'AboutUsMain' },
   { to: '/ServiseMain', label: 'ServiseMain' },
   { to: '/PriceListMain', label: 'PriceListMain' },
   { to: '/NewsMain', label: 'NewsMain' },
@@ -63,6 +64,7 @@ function App() {
           <Route path='OurGoal' element={<OurGoal />} />
           <Route path='AboutFounder' element={<AboutFounder />} />
           <Route path='AboutCompany' element={<AboutCompany />} />
+          <Route path='WeDo' element={<WeDo />} />
           {/* <Route path='#ExpertAdvice' element={<ExpertAdvice />} /> */}
           <Route path='*' element={<NotFound />} />
         </Route>

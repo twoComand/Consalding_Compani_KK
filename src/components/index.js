@@ -18,4 +18,5 @@ export { default as AboutCompany } from '../components/Home/AboutCompany';
 export { default as ExpertAdvice } from '../page/Sections/ExpertAdvice/ExpertAdvice';
 export { default as WeDo } from '../components/AboutUs/WeDo/WeDo';
 export { default as Strategy } from '../components/AboutUs/Strategy/Strategy';
+export { default as Spacialist } from '../components/AboutUs/Specialists/Spacialist';
 

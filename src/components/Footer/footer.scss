@@ -72,17 +72,19 @@
 
 
 @media screen and (min-width: 1024px) {
-  .uli{
-    a{
-      font-size: 14px;
+  #Footer {
+    .uli{
+      a{
+        font-size: 18px;
+      }
     }
-  }
-  .logos{
-    a{
-      font-size: 22px;
+    .logos{
+      a{
+        font-size: 18px;
+      }
     }
-  }
-  .p{
-    font-size: 20px;
+    .p{
+      font-size: 18px;
+    }
   }
 }

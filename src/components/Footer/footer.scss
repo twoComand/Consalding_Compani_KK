@@ -10,44 +10,44 @@
 
     #Footer {
       margin-top: 55px;
-    }
-    .uli{
-            background-color: #342EAD;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-              li{
+      .divsa{
+        width: 100%;
+        background-color: #342EAD;
+      }
+      .uli{
+              background-color: #342EAD;
+              display: flex;
               align-items: center;
               text-align: center;
-          }
-              a{
-                 border-right: 1px solid white;
-              padding-right: 4px;
-              padding-left: 4px;
-              font-size: 8px;
-              color: white;
+              justify-content: center;
+                li{
+                align-items: center;
+                text-align: center;
             }
-          }
-          .uli  li:last-child a{
-            border-right: 0;
-          }
-.divsa{
-  width: 100%;
-  background-color: #342EAD;
-}
-.contacss{
-a{
-    border-right: none;
-  }
-}
+                a{
+                   border-right: 1px solid white;
+                padding-right: 4px;
+                padding-left: 4px;
+                font-size: 8px;
+                color: white;
+              }
+            }
+            .uli  li:last-child a{
+              border-right: 0;
+            }
+            .contacss{
+            a{
+                border-right: none;
+              }
+            }
+            .logos{
+              a{
+                font-size: 12px;
+              }
+             
+            }
+    }
 
-.logos{
-  a{
-    font-size: 12px;
-  }
- 
-}
 
 
 @media screen  and ( min-width: 768px ){

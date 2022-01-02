@@ -1,20 +1,67 @@
+// @import '/src/scss/vars';
+
+// .accardion {
+//     border: 2px solid red;
+
+//     &__header{
+//         background-color: rgb(233, 212, 212);
+//         cursor: pointer;
+
+//         &:hover {
+//             background-color: royalblue;
+//         }
+//     }
+
+//     &__arrow {
+//         font-size: 40px;
+//         color: $mainTitleColor;
+
+//         &:hover {
+//             color: $secondColor;
+//         }
+//     }
+
+//     &__body {
+//          h4 {
+
+//          }
+
+//          p{
+             
+//          }
+//     }
+// }
+
+
 @import '/src/scss/vars';
 
 .accardion {
-    border: 2px solid red;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-bottom:  10px;
+    width: 375px;
 
-    &__header{
+    &header{
         background-color: rgb(233, 212, 212);
         cursor: pointer;
+        padding-top: 5px;
+        padding-left: 10px;
+
+
+
+        h2 {
+            font-size: 18px;
+        }
 
         &:hover {
-            background-color: royalblue;
+            background-color: rgb(87, 110, 179);
         }
     }
 
-    &__arrow {
-        font-size: 40px;
+    &arrow {
+        font-size: 15px;
         color: $mainTitleColor;
+
 
         &:hover {
             color: $secondColor;
@@ -22,12 +69,65 @@
     }
 
     &__body {
-         h4 {
+        display:inline-block;
+        padding: 5px 15px;
 
-         }
+    }
 
-         p{
-             
-         }
+    h4 {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    p {
+        padding-top: 2px;
+        font-size: 11px;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 3px;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: $secondColor;
+            color: #fff;
+
+        }
     }
 }
+
+
+@media screen and (min-width: 768px) {
+
+ .accardion {
+   width: 608px;
+   margin: 10px auto;
+  }
+
+
+ h4 {
+   font-size: 18px;
+  } 
+  p {
+   font-size: 16px;
+   }
+
+}
+
+@media screen and (min-width: 982px) {
+
+   .accardion {
+      width: 620px;
+       margin: 10px auto;
+
+    }
+
+    h4 {
+       font-size: 22px;
+    }
+   p {
+       font-size: 19px;
+    }
+
+    }

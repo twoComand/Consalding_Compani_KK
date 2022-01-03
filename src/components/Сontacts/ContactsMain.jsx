@@ -2,6 +2,7 @@ import React from 'react';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import AskUs from '../../page/Sections/AskUs/AskUs';
+import MapCart from '../../page/Sections/MapCart';
 import Contact from './Contact';
 import './contactsMain.scss'
 
@@ -40,6 +41,7 @@ function ContactsMain({ children }) {
                 })
             }
             <AskUs />
+            <MapCart />
 
             <div >{children}</div>
 

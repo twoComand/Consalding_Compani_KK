@@ -1,133 +1,75 @@
-// @import '/src/scss/vars';
-
-// .accardion {
-//     border: 2px solid red;
-
-//     &__header{
-//         background-color: rgb(233, 212, 212);
-//         cursor: pointer;
-
-//         &:hover {
-//             background-color: royalblue;
-//         }
-//     }
-
-//     &__arrow {
-//         font-size: 40px;
-//         color: $mainTitleColor;
-
-//         &:hover {
-//             color: $secondColor;
-//         }
-//     }
-
-//     &__body {
-//          h4 {
-
-//          }
-
-//          p{
-             
-//          }
-//     }
-// }
-
-
 @import '/src/scss/vars';
-
 .accardion {
-    border: 2px solid black;
-    margin: 0 auto;
-    margin-bottom:  10px;
-    width: 375px;
+    width: 75%;
+    margin: 0 auto 5px;
+    border: 2px solid $mainTitleColor;
 
-    &header{
-        background-color: rgb(233, 212, 212);
+    &__header{
+        display: flex;
+        justify-content: space-between;
         cursor: pointer;
-        padding-top: 5px;
-        padding-left: 10px;
+        padding: 8px;
 
-
-
-        h2 {
-            font-size: 18px;
+        h2{
+            font-size: 16px;
+            color: $mainTitleColor;
         }
 
         &:hover {
-            background-color: rgb(87, 110, 179);
-        }
-    }
-
-    &arrow {
-        font-size: 15px;
-        color: $mainTitleColor;
-
-
-        &:hover {
-            color: $secondColor;
+            .accardion__arrow{
+                color: $secondColor;
+            }
         }
     }
 
     &__body {
-        display:inline-block;
-        padding: 5px 15px;
+        padding: 8px;
 
+        h4{
+            margin: 10px 0;
+            color: $mainTitleColor;
+        }
+
+        button{
+            @extend %button;
+            margin: 10px 0;
+        }
     }
+    
+}
 
-    h4 {
-        padding-top: 10px;
-        font-size: 14px;
-    }
+@media screen and (min-width: 760px) {
+    .accardion {
+        &__header h2{
+            font-size: 22px;
+        }
 
-    p {
-        padding-top: 2px;
-        font-size: 11px;
-    }
+        &__body h4{
+            font-size: 20px;
+        }
+        &__body p{
+            font-size: 18px;
+        }
 
-    button {
-        margin-top: 10px;
-        padding: 3px;
-        border-radius: 10px;
-
-        &:hover {
-            background-color: $secondColor;
-            color: #fff;
-
+        button{
+            width: 150px;
+            height: 35px;
+            margin: 30px 0;
+            font-size: 18px;
         }
     }
 }
 
+@media screen and (min-width: 960px) {
+    .accardion {
+        max-width: 1000px;
+        &__header h2{
+            font-size: 28px;
+        }
 
-@media screen and (min-width: 768px) {
-
- .accardion {
-   width: 608px;
-   margin: 10px auto;
-  }
-
-
- h4 {
-   font-size: 18px;
-  } 
-  p {
-   font-size: 16px;
-   }
-
+        &__body p{
+            width: 100%;
+            margin: 25px 0;
+        }
+    }
 }
-
-@media screen and (min-width: 982px) {
-
-   .accardion {
-      width: 620px;
-       margin: 10px auto;
-
-    }
-
-    h4 {
-       font-size: 22px;
-    }
-   p {
-       font-size: 19px;
-    }
-
-    }

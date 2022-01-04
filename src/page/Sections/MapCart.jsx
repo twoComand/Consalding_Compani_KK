@@ -1,29 +1,11 @@
-import { YMaps, Map, Placemark } from 'react-yandex-maps';
-
-const mapState = { center: [55, 37], zoom: 10 };
+import { YMaps, Map } from 'react-yandex-maps';
+import './mapCart.scss';
 
 const MapCart = () => (
     <YMaps>
-        <Map state={mapState}>
-
-            <Placemark
-                geometry={{
-                    coordinates: [55.751574, 37.573856]
-                }}
-                properties={{
-                    hintContent: 'Собственный значок метки',
-                    balloonContent: 'Это красивая метка'
-                }}
-                options={{
-                    iconLayout: "default#image",
-                    iconImageHref: 'images/myIcon.gif',
-                    iconImageSize: [30, 42],
-                    iconImageOffset: [-3, -42]
-                }}
-            />
-
-        </Map>
+        <div>
+            <Map className='mapCart' defaultState={{ center: [42.878645, 74.616205], zoom: 12 }} />
+        </div>
     </YMaps>
 );
-
 export default MapCart

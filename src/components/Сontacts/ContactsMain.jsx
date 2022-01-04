@@ -40,8 +40,8 @@ function ContactsMain({ children }) {
                     return <Contact Ctitle={element.title} Clinks={element.links} key={index + element.title} />
                 })
             }
-            <AskUs />
             <MapCart />
+            <AskUs />
 
             <div >{children}</div>
 
